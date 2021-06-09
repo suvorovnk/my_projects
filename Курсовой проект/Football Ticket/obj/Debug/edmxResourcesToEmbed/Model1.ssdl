@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ftModel" Provider="Npgsql" ProviderManifestToken="11.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="employer">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surname" Type="text" Nullable="false" />
+    <Property Name="name" Type="text" Nullable="false" />
+    <Property Name="patronymic" Type="text" />
+    <Property Name="login" Type="text" Nullable="false" />
+    <Property Name="password" Type="text" Nullable="false" />
+    <Property Name="role" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="match">
+    <Key>
+      <PropertyRef Name="match_id" />
+    </Key>
+    <Property Name="match_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="team_id" Type="int4" Nullable="false" />
+    <Property Name="type" Type="text" Nullable="false" />
+    <Property Name="date_match" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="places">
+    <Key>
+      <PropertyRef Name="place_id" />
+    </Key>
+    <Property Name="place_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="match_id" Type="int4" />
+    <Property Name="sector" Type="int4" Nullable="false" />
+    <Property Name="row" Type="int4" Nullable="false" />
+    <Property Name="num_place" Type="int4" Nullable="false" />
+    <Property Name="type" Type="text" Nullable="false" />
+    <Property Name="season_ticket" Type="bool" />
+    <Property Name="price" Type="float4" />
+  </EntityType>
+  <EntityType Name="team">
+    <Key>
+      <PropertyRef Name="team_id" />
+    </Key>
+    <Property Name="team_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="text" Nullable="false" />
+    <Property Name="city" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticket_id" />
+    </Key>
+    <Property Name="ticket_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="place_id" Type="int4" />
+    <Property Name="emp_id" Type="int4" />
+  </EntityType>
+  <Association Name="match_team_id_fkey">
+    <End Role="team" Type="Self.team" Multiplicity="1" />
+    <End Role="match" Type="Self.match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="team">
+        <PropertyRef Name="team_id" />
+      </Principal>
+      <Dependent Role="match">
+        <PropertyRef Name="team_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="place_match_id_fkey">
+    <End Role="match" Type="Self.match" Multiplicity="0..1" />
+    <End Role="places" Type="Self.places" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="match">
+        <PropertyRef Name="match_id" />
+      </Principal>
+      <Dependent Role="places">
+        <PropertyRef Name="match_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ticket_emp_id_fkey">
+    <End Role="employer" Type="Self.employer" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employer">
+        <PropertyRef Name="emp_id" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ticket_place_id_fkey">
+    <End Role="places" Type="Self.places" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="places">
+        <PropertyRef Name="place_id" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="place_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ftModelContainer">
+    <EntitySet Name="employer" EntityType="Self.employer" Schema="public" store:Type="Tables" />
+    <EntitySet Name="match" EntityType="Self.match" Schema="public" store:Type="Tables" />
+    <EntitySet Name="places" EntityType="Self.places" Schema="public" store:Type="Tables" />
+    <EntitySet Name="team" EntityType="Self.team" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" Schema="public" store:Type="Tables" />
+    <AssociationSet Name="match_team_id_fkey" Association="Self.match_team_id_fkey">
+      <End Role="team" EntitySet="team" />
+      <End Role="match" EntitySet="match" />
+    </AssociationSet>
+    <AssociationSet Name="place_match_id_fkey" Association="Self.place_match_id_fkey">
+      <End Role="match" EntitySet="match" />
+      <End Role="places" EntitySet="places" />
+    </AssociationSet>
+    <AssociationSet Name="ticket_emp_id_fkey" Association="Self.ticket_emp_id_fkey">
+      <End Role="employer" EntitySet="employer" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="ticket_place_id_fkey" Association="Self.ticket_place_id_fkey">
+      <End Role="places" EntitySet="places" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

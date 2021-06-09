@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ecologyModel" Provider="Npgsql" ProviderManifestToken="11.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="client_id" />
+    </Key>
+    <Property Name="client_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surname" Type="text" Nullable="false" />
+    <Property Name="name" Type="text" Nullable="false" />
+    <Property Name="patronymic" Type="text" />
+    <Property Name="phone_number" Type="text" />
+    <Property Name="mail" Type="text" />
+    <Property Name="company" Type="text" />
+  </EntityType>
+  <EntityType Name="employers">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surname" Type="text" Nullable="false" />
+    <Property Name="name" Type="text" Nullable="false" />
+    <Property Name="patronymic" Type="text" />
+    <Property Name="login" Type="text" />
+    <Property Name="password" Type="text" />
+    <Property Name="role" Type="text" />
+  </EntityType>
+  <EntityType Name="purchase">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_id" Type="int4" />
+    <Property Name="client_id" Type="int4" />
+    <Property Name="service" Type="text" Nullable="false" />
+    <Property Name="price" Type="float4" Nullable="false" />
+    <Property Name="date_add" Type="date" Nullable="false" />
+    <Property Name="date_end" Type="date" Nullable="false" />
+    <Property Name="done" Type="bool" Nullable="false" />
+    <Property Name="registry" Type="bool" Nullable="false" />
+  </EntityType>
+  <Association Name="purchase_client_id_fkey">
+    <End Role="clients" Type="Self.clients" Multiplicity="0..1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="client_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="client_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="purchase_emp_id_fkey">
+    <End Role="employers" Type="Self.employers" Multiplicity="0..1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employers">
+        <PropertyRef Name="emp_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ecologyModelContainer">
+    <EntitySet Name="clients" EntityType="Self.clients" Schema="public" store:Type="Tables" />
+    <EntitySet Name="employers" EntityType="Self.employers" Schema="public" store:Type="Tables" />
+    <EntitySet Name="purchase" EntityType="Self.purchase" Schema="public" store:Type="Tables" />
+    <AssociationSet Name="purchase_client_id_fkey" Association="Self.purchase_client_id_fkey">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="purchase_emp_id_fkey" Association="Self.purchase_emp_id_fkey">
+      <End Role="employers" EntitySet="employers" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

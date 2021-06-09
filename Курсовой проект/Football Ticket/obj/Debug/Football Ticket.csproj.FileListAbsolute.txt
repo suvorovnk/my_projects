@@ -1,0 +1,91 @@
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Football Ticket.exe.config
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Football Ticket.exe
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Football Ticket.pdb
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Form1.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Properties.Resources.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.exe
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.pdb
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Authorizecs.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Stadium.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Npgsql.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Buffers.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Collections.Immutable.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Memory.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Text.Json.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Npgsql.pdb
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\Npgsql.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Buffers.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Collections.Immutable.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Memory.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Text.Json.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Admin.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.DBOperator.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Ticketer.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football Ticket.csproj.CopyComplete
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.AddM.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.ShowMatches.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.ShowTeams.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.AddT.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.EditT.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Mesta.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.ChooseD.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.EditM.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.AddW.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.DeleteWorker.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.EditW.resources
+C:\Users\user\Desktop\Лабораторные по информатике\3 курс.All or nothing\Курсовая. Новый вызов\Football Ticket\Football Ticket\obj\Debug\Football_Ticket.Employers.resources

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ftModelContainer" CdmEntityContainer="ftEntities1">
+    <EntitySetMapping Name="employer">
+      <EntityTypeMapping TypeName="ftModel.employer">
+        <MappingFragment StoreEntitySet="employer">
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="patronymic" ColumnName="patronymic" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="match">
+      <EntityTypeMapping TypeName="ftModel.match">
+        <MappingFragment StoreEntitySet="match">
+          <ScalarProperty Name="match_id" ColumnName="match_id" />
+          <ScalarProperty Name="team_id" ColumnName="team_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="date_match" ColumnName="date_match" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="places">
+      <EntityTypeMapping TypeName="ftModel.places">
+        <MappingFragment StoreEntitySet="places">
+          <ScalarProperty Name="place_id" ColumnName="place_id" />
+          <ScalarProperty Name="match_id" ColumnName="match_id" />
+          <ScalarProperty Name="sector" ColumnName="sector" />
+          <ScalarProperty Name="row" ColumnName="row" />
+          <ScalarProperty Name="num_place" ColumnName="num_place" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="season_ticket" ColumnName="season_ticket" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="team">
+      <EntityTypeMapping TypeName="ftModel.team">
+        <MappingFragment StoreEntitySet="team">
+          <ScalarProperty Name="team_id" ColumnName="team_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticket">
+      <EntityTypeMapping TypeName="ftModel.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="ticket_id" ColumnName="ticket_id" />
+          <ScalarProperty Name="place_id" ColumnName="place_id" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

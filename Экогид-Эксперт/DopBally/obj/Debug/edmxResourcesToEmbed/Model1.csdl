@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ecologyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="client_id" />
+    </Key>
+    <Property Name="client_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="purchase" Relationship="Self.purchase_client_id_fkey" FromRole="clients" ToRole="purchase" />
+    <Property Name="company" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="employers">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="purchase" Relationship="Self.purchase_emp_id_fkey" FromRole="employers" ToRole="purchase" />
+  </EntityType>
+  <EntityType Name="purchase">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="client_id" Type="Int32" />
+    <Property Name="service" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Single" Nullable="false" />
+    <Property Name="date_add" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="date_end" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="done" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="clients" Relationship="Self.purchase_client_id_fkey" FromRole="purchase" ToRole="clients" />
+    <NavigationProperty Name="employers" Relationship="Self.purchase_emp_id_fkey" FromRole="purchase" ToRole="employers" />
+    <Property Name="registry" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="purchase_client_id_fkey">
+    <End Role="clients" Type="Self.clients" Multiplicity="0..1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="client_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="client_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="purchase_emp_id_fkey">
+    <End Role="employers" Type="Self.employers" Multiplicity="0..1" />
+    <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employers">
+        <PropertyRef Name="emp_id" />
+      </Principal>
+      <Dependent Role="purchase">
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ecologyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clients" EntityType="Self.clients" />
+    <EntitySet Name="employers" EntityType="Self.employers" />
+    <EntitySet Name="purchase" EntityType="Self.purchase" />
+    <AssociationSet Name="purchase_client_id_fkey" Association="Self.purchase_client_id_fkey">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+    <AssociationSet Name="purchase_emp_id_fkey" Association="Self.purchase_emp_id_fkey">
+      <End Role="employers" EntitySet="employers" />
+      <End Role="purchase" EntitySet="purchase" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

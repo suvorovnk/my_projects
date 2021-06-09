@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ftModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="employer">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ticket" Relationship="Self.ticket_emp_id_fkey" FromRole="employer" ToRole="ticket" />
+  </EntityType>
+  <EntityType Name="match">
+    <Key>
+      <PropertyRef Name="match_id" />
+    </Key>
+    <Property Name="match_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="team_id" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_match" Type="DateTime" Precision="0" Nullable="false" />
+    <NavigationProperty Name="team" Relationship="Self.match_team_id_fkey" FromRole="match" ToRole="team" />
+    <NavigationProperty Name="places" Relationship="Self.place_match_id_fkey" FromRole="match" ToRole="places" />
+  </EntityType>
+  <EntityType Name="places">
+    <Key>
+      <PropertyRef Name="place_id" />
+    </Key>
+    <Property Name="place_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="match_id" Type="Int32" />
+    <Property Name="sector" Type="Int32" Nullable="false" />
+    <Property Name="row" Type="Int32" Nullable="false" />
+    <Property Name="num_place" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="season_ticket" Type="Boolean" />
+    <Property Name="price" Type="Single" />
+    <NavigationProperty Name="match" Relationship="Self.place_match_id_fkey" FromRole="places" ToRole="match" />
+    <NavigationProperty Name="ticket" Relationship="Self.ticket_place_id_fkey" FromRole="places" ToRole="ticket" />
+  </EntityType>
+  <EntityType Name="team">
+    <Key>
+      <PropertyRef Name="team_id" />
+    </Key>
+    <Property Name="team_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="match" Relationship="Self.match_team_id_fkey" FromRole="team" ToRole="match" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticket_id" />
+    </Key>
+    <Property Name="ticket_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="place_id" Type="Int32" />
+    <Property Name="emp_id" Type="Int32" />
+    <NavigationProperty Name="employer" Relationship="Self.ticket_emp_id_fkey" FromRole="ticket" ToRole="employer" />
+    <NavigationProperty Name="places" Relationship="Self.ticket_place_id_fkey" FromRole="ticket" ToRole="places" />
+  </EntityType>
+  <Association Name="ticket_emp_id_fkey">
+    <End Role="employer" Type="Self.employer" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employer">
+        <PropertyRef Name="emp_id" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="match_team_id_fkey">
+    <End Role="team" Type="Self.team" Multiplicity="1" />
+    <End Role="match" Type="Self.match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="team">
+        <PropertyRef Name="team_id" />
+      </Principal>
+      <Dependent Role="match">
+        <PropertyRef Name="team_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="place_match_id_fkey">
+    <End Role="match" Type="Self.match" Multiplicity="0..1" />
+    <End Role="places" Type="Self.places" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="match">
+        <PropertyRef Name="match_id" />
+      </Principal>
+      <Dependent Role="places">
+        <PropertyRef Name="match_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ticket_place_id_fkey">
+    <End Role="places" Type="Self.places" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="places">
+        <PropertyRef Name="place_id" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="place_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ftEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="employer" EntityType="Self.employer" />
+    <EntitySet Name="match" EntityType="Self.match" />
+    <EntitySet Name="places" EntityType="Self.places" />
+    <EntitySet Name="team" EntityType="Self.team" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" />
+    <AssociationSet Name="ticket_emp_id_fkey" Association="Self.ticket_emp_id_fkey">
+      <End Role="employer" EntitySet="employer" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="match_team_id_fkey" Association="Self.match_team_id_fkey">
+      <End Role="team" EntitySet="team" />
+      <End Role="match" EntitySet="match" />
+    </AssociationSet>
+    <AssociationSet Name="place_match_id_fkey" Association="Self.place_match_id_fkey">
+      <End Role="match" EntitySet="match" />
+      <End Role="places" EntitySet="places" />
+    </AssociationSet>
+    <AssociationSet Name="ticket_place_id_fkey" Association="Self.ticket_place_id_fkey">
+      <End Role="places" EntitySet="places" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
