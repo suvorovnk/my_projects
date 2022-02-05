@@ -18,37 +18,40 @@ namespace DopBally
             InitializeComponent();
 
         }
-        
+
+        // Функция "Показать/скрыть пароль"
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
             textBox2.UseSystemPasswordChar = !checkBox1.Checked;
-           
         }
 
+        // Обработка события нажатия кнопки "Войти"
         private void button1_Click(object sender, EventArgs e)
         {
-            Functions f = new Functions();
-            if (f.CheckUser(textBox1.Text, textBox2.Text) == "директор")
+            Functions function = new Functions();
+            // Открытие формы в зависимости от роли 
+            if (function.CheckUser(textBox1.Text, textBox2.Text) == "директор")
             {
-                AdminMenu am = new AdminMenu();
+                AdminMenu adminMenu = new AdminMenu();
                 this.Hide();
-                am.Show();
+                adminMenu.Show();
             }
-            else if (f.CheckUser(textBox1.Text, textBox2.Text) == "ошибка") MessageBox.Show("Неправильный логин или пароль");
+            else if (function.CheckUser(textBox1.Text, textBox2.Text) == "ошибка") MessageBox.Show("Неправильный логин или пароль");
             else
             {
-                WorkerMenu w = new WorkerMenu(f.emplo_id);
+                WorkerMenu workerMenu = new WorkerMenu(function.emplo_id);
                 this.Hide();
-                w.Show();
+                workerMenu.Show();
             }
         }
 
+        // Обработчик закрытия формы авторизации
         private void Authorize_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
+        // При нажатии клавиши Enter будет производиться вход
         private void Authorize_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) button1_Click(sender, e);

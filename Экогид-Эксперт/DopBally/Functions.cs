@@ -11,10 +11,12 @@ namespace DopBally
     {
         public static ecologyEntities db = new ecologyEntities();
         public int emplo_id;
+        
+        // Метод авторизации пользователя
         public string CheckUser(string l, string p)
         {
             List<employers> workers = (from emps in db.employers select emps).ToList();
-            string role = "ошибка";
+            string role="ошибка";
             foreach (var emps in workers)
             {
                 if ((emps.login == l) && (emps.password == p))
